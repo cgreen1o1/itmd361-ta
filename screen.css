@@ -67,6 +67,7 @@ ul {
   list-style-type: square;
   font-weight: normal;
   text-decoration: none;
+  list-style-position: inside;
 }
 /* nested list */
 li ol,
@@ -93,6 +94,7 @@ li li li ol {
 }
 li li li li ul {
   list-style-type: circle;
+  list-style-position: inside;
 }
 /* list item */
 li {
