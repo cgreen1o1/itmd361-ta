@@ -253,6 +253,37 @@ a[href*="http"] {
     margin-left: 2.7397260273973%; /* 20 / 730 = 0.027397260273973 */
     float: right;
   }
+  .flexbox #home-content,
+  .flexbox #home-supporting,
+  .flexbox #home-support {
+    float: none;
+    margin: 0;
+    width: auto;
+  }
+  .flexbox #home-pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .flexbox #home-police-pics {
+    display: flex;
+    flex-direction: column;
+  }
+  .flexbox #police-merch {
+    display: flex;
+    flex-direction: column;
+  }
+  .flexbox #bhawks-caption {
+    padding-top: 0;
+  }
+  .flexbox #sworn-in,
+  .flexbox #parade,
+  .flexbox #dog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+  }
   .flexbox #back-main {
     display: flex;
     justify-content: space-between;
