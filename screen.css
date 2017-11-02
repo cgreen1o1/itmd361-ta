@@ -180,7 +180,9 @@ a[href*="http"] {
   list-style-type: none;
   padding-bottom: 0;
 }
-
+#crystal {
+  padding-top: 1.22em; /* 22 / 18 = 1.2222222222 */
+}
 /* State Styles */
 /*
   States of the browser and user access
