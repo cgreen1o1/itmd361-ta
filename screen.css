@@ -285,11 +285,11 @@ a[href*="http"] {
   }
   .cssgrid #resume-content {
     display: grid;
-  }
-  .cssgrid #resume-all {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2.7397260273973%; /* 20 / 730 = 0.027397260273973 */
-    grid-column: 1 / 3;
     width: auto;
+  }
+  .cssgrid #resume-all {
+    grid-column: 1 / 3;
   }
 }
