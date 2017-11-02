@@ -349,23 +349,24 @@ a[href*="http"] {
     margin-left: 1.3157894736842%; /* 10 / 760 = 0.013157894736842 */
     float: right;
   }
-  .flexbox #back-content,
-  .flexbox #back-supporting,
-  .flexbox #back-support {
-    float: none;
-    margin-left: 0;
+  /*
+    For Resume page:
+    730 pixel grid w/ 50px + 80 margins (130)
+    Columns: 270px & 210px & 210px;
+    Gutters: 20px;
+    First module: 500px; (270 + 210 + 20)
+    Second module: 230px (210 + 20);
+  */
+  #resume-content {
+    width: 68.4931506849315%; /* 500 / 730 = 0.684931506849315 */
   }
-  .flexbox #back-main {
-    display: flex;
-    justify-content: space-between;
+  .cssgrid #resume-content {
+    display: grid;
   }
-  .flexbox #back-content {
-    order: 2;
-  }
-  .flexbox #back-supporting {
-    order: 1;
-  }
-  .flexbox #back-support {
-    order: 3;
+  .cssgrid #resume-all {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2.7397260273973%; /* 20 / 730 = 0.027397260273973 */
+    grid-column: 1 / 3;
+    width: auto;
   }
 }
