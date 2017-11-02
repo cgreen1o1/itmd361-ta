@@ -285,37 +285,6 @@ a[href*="http"] {
     margin: 0;
   }
 
-  .flexbox #irrational,
-  .flexbox #pi-shirt,
-  .flexbox #home-shirt {
-    width: 100%;
-  }
-  .flexbox #bio-movie {
-    width: 150%;
-  }
-  .flexbox #home-supporting,
-  .flexbox #home-pics {
-    display: flex;
-    justify-content: space-between;
-  }
-  .flexbox #home-text {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 71.4285714285714%; /* 500 / 700 = 0.714285714285714*/
-  }
-  .flexbox #home-pics {
-    margin-left: 7.1428571428571%; /* 50 / 700 = 0.114285714285714 */
-  }
-  .flexbox #home-others {
-    width: 71.4285714285714%; /* 500 / 700 = 0.714285714285714*/
-  }
-  .flexbox #parade {
-    padding-bottom: 1.222em; /* 22 / 18 = 1.2222222222 */
-  }
-  .flexbox #bhawks {
-    width: 66.5%;
-  }
   /*
   For Resume page: */
   #resume-body {
