@@ -130,6 +130,13 @@ figcaption {
   2. concerned with layout and spatial
      relationships
 */
+#merch,
+#otherhead {
+  padding-top: 0.611em;/* 11 / 18 = 0.611111111111111 */
+}
+#hired-caption {
+  padding-top: 0;
+}
 #background h3 {
   font-weight: bold;
 }
@@ -160,19 +167,6 @@ a[href*="http"] {
   background-color: #000000;
   color: #00CCFF;
 }
-
-#crystal {
-  padding-top: 1.222em; /* 22 / 18 = 1.2222222222 */
-}
-#dog {
-  padding-bottom: 1.222em; /* 22 / 18 = 1.2222222222 */
-}
-#shirts {
-  padding-bottom: 0;
-}
-#otherhead {
-  padding-top: 0.611em; /* 11 / 18 = 0.611111111111111 */
-}
 /* Modular Styles */
 /*
   Repeating style patterns.
@@ -185,19 +179,6 @@ a[href*="http"] {
 #navigation li {
   list-style-type: none;
   padding-bottom: 0;
-}
-.flexbox #navigation ol {
-  display: flex;
-}
-.flexbox #navigation li {
-  float: none;
-}
-/* Center align headings */
-#res,
-#qual,
-#code,
-.title {
-  text-align: center;
 }
 
 /* State Styles */
@@ -225,12 +206,7 @@ a[href*="http"] {
     padding-left: 11.73333333%; /* 44 / 375 = 11.73333333% */
   }
 }
-@media screen and (min-width: 500px) {
-  #pi-shirt,
-  #home-shirt {
-    width: 75%;
-  }
-}
+
 @media screen and (min-width: 640px) {
   html {
     font-size: 1.25em; /* 20 / 16 = 1.25em */
