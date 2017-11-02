@@ -122,9 +122,6 @@ figcaption {
   line-height: 1.037em; /* 14px / 13.503 = 1.0368em */
   padding-top: 0.815em; /* 11 / 13.503 = 0.81463*/
 }
-code {
-  width: auto;
-}
 
 /* Layout Styles */
 /*
@@ -241,83 +238,36 @@ a[href*="http"] {
 }
 
 @media screen and (min-width: 860px) {
-  /*
-  For About Me page:
-    700 pixel grid w/ 80px margins (160)
-    Columns: 300px;
-    Gutters: 100px;
-  */
-  #home img,
-  #home video {
-    width: 75%;
-  }
-  #bio-movie,
-  #pi-shirt,
-  #home-shirt {
-    width: 100%;
-  }
-  #home-aside {
-    text-align: center;
-  }
-  #home-body,
-  #resume-body {
-    padding-right: 9.302325581%; /* 80 / 860 = 0.09302325581 */
-    padding-left: 9.302325581%; /* 80 / 860 = 0.09302325581 */
-  }
-  #home-content {
-    width: 42.857143%; /* 300 / 700 = 0.42857143 */
-    float: left;
-  }
-  #home-cont {
-    width: 42.857143%; /* 300 / 700 = 0.42857143 */
-    margin-left: 14.285714%; /* 100 / 700 = 0.14285714 */
-    float: right;
-  }
-  #home-others {
-    clear: left;
-    width: 71.4285714285714%; /* 500 / 700 = 0.714285714285714*/
-  }
-  .flexbox #home-content,
-  .flexbox #home-cont,
-  .flexbox #home-others {
-    float: none;
-    width: auto;
-    margin: 0;
+  #merch,
+  #otherhead {
+    padding-top: 0;
   }
 
   /*
-  For Resume page: */
-  #resume-body {
-    width: 60%;/* 336 /560 = 0.56 */
-  }
-  #resume-html main {
-    font-size: 1.111em; /* 20 / 18 = 1.111111111111111em */
-  }
-  /*
-  For Background page:
-    760 pixel grid w/ 50px margins (100)
-    Columns: 300px & 220px & 220px;
-    Gutters: 10px;
-    First module: 300px;
-    Second and third module: 230px (220 + 10);
+    For About Me & Background pages:
+    730 pixel grid w/ 50px + 80 margins (130)
+    Columns: 270px & 210px & 210px;
+    Gutters: 20px;
+    First module: 270px;
+    Second and third module: 230px (210 + 20);
   */
-  #back-body {
+  body {
     padding-right: 5.8139534883721%; /* 50 / 860 = 0.058139534883721 */
     padding-left: 9.302325581%; /* 80 / 860 = 0.09302325581 */
   }
 
-  #back-content {
-    width: 39.4736842105263%; /* 300 / 760 = 0.394736842105263 */
+  #content {
+    width: 36.986301369863%; /* 270 / 730 = 0.36986301369863 */
     float: left;
   }
-  #back-supporting {
-    width: 28.9473684210526%; /* 220 / 760 = 0.289473684210526 */
-    margin-left: 1.3157894736842%; /* 10 / 760 = 0.013157894736842 */
+  #supporting {
+    width: 28.7671232876712%; /* 210 / 730 = 0.287671232876712 */
+    margin-left: 2.7397260273973%; /* 20 / 730 = 0.027397260273973 */
     float: left;
   }
-  #back-support {
-    width: 28.9473684210526%; /* 220 / 760 = 0.289473684210526 */
-    margin-left: 1.3157894736842%; /* 10 / 760 = 0.013157894736842 */
+  #support {
+    width: 28.7671232876712%; /* 210 / 730 = 0.287671232876712 */
+    margin-left: 2.7397260273973%; /* 20 / 730 = 0.027397260273973 */
     float: right;
   }
   /*
