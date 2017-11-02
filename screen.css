@@ -251,6 +251,9 @@ a[href*="http"] {
     margin-left: 2.7397260273973%; /* 20 / 730 = 0.027397260273973 */
     float: right;
   }
+  #background aside {
+    padding-top: 0;
+  }
   /*
     For Resume page:
     730 pixel grid w/ 50px + 80 margins (130)
