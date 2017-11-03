@@ -236,6 +236,10 @@ a[href*="http"] {
   #background aside {
     padding-top: 0;
   }
+  .flexbox #home-aside {
+    text-align: center;
+    padding-top: 0;
+  }
   #home-content,
   #back-content {
     width: 36.986301369863%; /* 270 / 730 = 0.36986301369863 */
@@ -288,6 +292,23 @@ a[href*="http"] {
   .flexbox #merch,
   .flexbox #otherhead {
     padding-top: 0.611em;/* 11 / 18 = 0.611111111111111 */
+  }
+  .flexbox #home-media {
+    display: flex;
+    flex-direction: column;
+  }
+  .flexbox #shirts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .flexbox #media-movie {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-around;
   }
   .flexbox #back-main {
     display: flex;
