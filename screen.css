@@ -282,7 +282,8 @@ a[href*="http"] {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 400px;
+    width: 29.623em; /* 400px (size of picture width) / 13.503px (size of
+    figcaption text) = 29.623046730356217 */
   }
   .flexbox #merch,
   .flexbox #otherhead {
