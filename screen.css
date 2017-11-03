@@ -349,10 +349,14 @@ a[href*="http"] {
   .cssgrid #resume-all {
     grid-column: 1 / 3;
   }
-  @media screen and (min-width: 1000px) {
-    .flexbox #home-text,
-    .flexbox #other-text {
-      width: 75%; /* 750 / 1000 = 0.75 */
-    }
+}
+@media screen and (min-width: 1000px) {
+  .flexbox #home-text,
+  .flexbox #other-text {
+    width: 75%; /* 750 / 1000 = 0.75 */
+  }
+  .flexbox #home-pics {
+    margin-right: 10%; /* 100 / 1000 = .1 */
+    margin-left: 10%; /* 100 / 1000 = .1 */
   }
 }
