@@ -157,6 +157,9 @@ a[href*="http"] {
   float: left;
   width: 33.3333333333%;
 }
+.js a {
+  cursor: pointer;
+}
 #navigation a {
   display: block;
   width: 100%;
@@ -192,9 +195,7 @@ a[href*="http"] {
   2. Influenced by JavaScript
   3. Organized by Base, Layout, Module, State
 */
-.js a {
-  cursor: pointer;
-}
+
 #navigation a:hover {
   background-color: #0000FF;
 }
