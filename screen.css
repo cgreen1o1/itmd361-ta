@@ -207,69 +207,6 @@ a[href*="http"] {
   background-color: #00CCFF;
 }
 
-/* Using jQuery to put navigation menu within 3-lined box */
-@media screen and (max-width: 750px) {
-  /*Display of menu items within drop-drown */
-  .js #navigation li {
-    margin: 0.278em 0 0.278em 0; /* 5 / 18 = 0.277777777777778 */
-    float: none;
-    display: block;
-  }
-  /*Drop-drown menu text styling (within drop-down) */
-  .js #navigation a {
-    display: block;
-    width: 100%;
-    font-size: 1.111em; /* 20 / 18 = 1.111111111111111 */
-    padding-top: 0.55em; /* 11 / 20 = 0.55 */
-    padding-bottom: 0.55em; /* 11 / 20 = 0.55 */
-    text-align: left;
-    text-decoration: none;
-    background-color: #000000;
-    color: #00CCFF;
-  }
-  .js #navigation a:hover {
-    background-color: #0000FF;
-    color: #FFFFFF;
-  }
-  .js #navigation ol.active {
-    display: none;
-  }
-  /*Drop-drown background menu styling (within drop-down) */
-  .js #navigation ol {
-    width: 100%;
-    position: absolute;
-    top: 130%;
-    left: 0;
-    padding: 0.611em; /* 11/18 = 0.611111111111111  */
-    border-radius: 0.611em; /* 11/18 = 0.611111111111111  */
-    background: #000000;
-  }
-  /*Position/styling of Arrow pointing up to 3-lined menu */
-  .js #navigation ol:after {
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 0;
-    left: 2.6em;
-    content: "";
-    transform: translate(0, -100%);
-    border-left: 0.389em solid transparent;  /* 7 / 18 = 0.388888888888889 */
-    border-right: 0.389em solid transparent;  /* 7 / 18 = 0.388888888888889 */
-    border-bottom: 0.389em solid #303030;  /* 7 / 18 = 0.388888888888889 */
-  }
-
-  /*Padding of menu symbol &#9776; */
-  #menu {
-    padding: 2.222em; /* 40 / 18 = 2.222222222222222 */
-  }
-
-}
-@media screen and (min-width: 750px) {
-  /* Make 3-lined menu disappear */
-  #navigation #menu {
-    display: none;
-  }
-}
 @media screen and (min-width: 375px) {
   body {
     padding-right: 11.73333333%; /* 44 / 375 = 11.73333333% */
