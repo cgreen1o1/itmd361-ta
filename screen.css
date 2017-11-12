@@ -304,10 +304,10 @@ a[href*="http"] {
   }
   .flexbox #shirts {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
   }
   .flexbox #media-movie {
     display: flex;
