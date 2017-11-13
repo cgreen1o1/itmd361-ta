@@ -35,7 +35,10 @@ body {
   padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
   background: linear-gradient(to top left, #00CCFF, #FFFFFF);
 }
-
+body::after{
+  content: "mobile";
+  display: none;
+}
 h1,
 h2,
 h3,
@@ -237,6 +240,10 @@ a[href*="http"] {
   body {
     padding-right: 5.8139534883721%; /* 50 / 860 = 0.058139534883721 */
     padding-left: 9.302325581%; /* 80 / 860 = 0.09302325581 */
+  }
+  body::after{
+    content: "large-scale";
+    display: none;
   }
   #background aside {
     padding-top: 0;
