@@ -272,7 +272,7 @@ a[href*="http"] {
   .flexbox #home-pics {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .flexbox #home-police-pics {
     display: flex;
@@ -302,17 +302,15 @@ a[href*="http"] {
     display: flex;
     flex-direction: column;
   }
-  .flexbox #shirts {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .flexbox #media-movie {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .flexbox #shirts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
   }
   .flexbox #back-main {
