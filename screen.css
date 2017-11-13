@@ -311,8 +311,8 @@ a[href*="http"] {
   }
   .flexbox #media-movie {
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-around;
   }
   .flexbox #back-main {
@@ -359,9 +359,5 @@ a[href*="http"] {
   .flexbox #home-text,
   .flexbox #other-text {
     width: 75%; /* 750 / 1000 = 0.75 */
-  }
-  .flexbox #home-pics {
-    margin-right: 10%; /* 100 / 1000 = .1 */
-    margin-left: 10%; /* 100 / 1000 = .1 */
   }
 }
