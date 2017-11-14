@@ -209,6 +209,9 @@ a[href*="http"] {
   color: #000000;
   background-color: #00CCFF;
 }
+.js.hide {
+  display: none;
+}
 
 @media screen and (min-width: 375px) {
   body {
