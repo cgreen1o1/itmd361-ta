@@ -12,7 +12,7 @@ $.noConflict();
     '../media/irrational-pi-43.jpg',
     '../media/no-place-like-home-4-3.jpg'];
   var imageIndex2 = 0;
-  var size = window
+  var size = window.getComputedStyle(document.body, ':after').getPropertyValue('content');
 
   $('html').removeClass('no-js').addClass('js');
 
@@ -39,8 +39,7 @@ $.noConflict();
   }
 
   function responsiveSize(target) {
-      .getComputedStyle(document.body, ':after')
-      .getPropertyValue('content');
+
     if(size.indexOf(target) === -1) {
       return false;
     } else {
