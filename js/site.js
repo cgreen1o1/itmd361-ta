@@ -6,7 +6,7 @@
 $('html').addClass('js').removeClass('no-js');
 
 $.noConflict();
-//  function that cycles through images on click
+
 (function($) {
   var mainImage = document.getElementById('hired');
   var imageArray = [document.getElementById('hired').src,
@@ -24,6 +24,7 @@ $.noConflict();
     this.paused ? this.play() : this.pause();
   });
 
+//  function that cycles through images on click
   document.getElementById('hired').addEventListener("click", changeImage);
   function changeImage() {
     mainImage.setAttribute('src', imageArray[imageIndex]);
@@ -32,7 +33,7 @@ $.noConflict();
       imageIndex = 0;
     }
   }
-
+//  function that cycles through images on click
   document.getElementById('pinum').addEventListener("click", changeImage2);
   function changeImage2() {
     mainImage2.setAttribute('src', imageArray2[imageIndex2]);
