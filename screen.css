@@ -134,7 +134,7 @@ figcaption {
      relationships
 */
 #merch,
-#otherhead {
+#common-others {
   padding-top: 0.611em;/* 11 / 18 = 0.611111111111111 */
 }
 #hired-caption {
@@ -228,7 +228,7 @@ a[href*="http"] {
 
 @media screen and (min-width: 860px) {
   #merch,
-  #otherhead {
+  #common-others {
     padding-top: 0;
   }
 
@@ -305,7 +305,7 @@ a[href*="http"] {
     figcaption text) = 29.623046730356217 */
   }
   .flexbox #merch,
-  .flexbox #otherhead {
+  .flexbox #common-others {
     padding-top: 0.611em;/* 11 / 18 = 0.611111111111111 */
   }
   .flexbox #home-media {
