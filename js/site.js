@@ -6,7 +6,7 @@
 $('html').addClass('js').removeClass('no-js');
 
 $.noConflict();
-
+//  function that cycles through images on click
 (function($) {
   var mainImage = document.getElementById('hired');
   var imageArray = ['../media/hired-4-3.jpg',
