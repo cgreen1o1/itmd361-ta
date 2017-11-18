@@ -25,30 +25,21 @@ $.noConflict();
     this.paused ? this.play() : this.pause();
   });
 
-  if(responsiveSize('mobile')) {
-    function changeImage() {
-      mainImage.setAttribute('src', imageArray[imageIndex]);
-      imageIndex++;
-      if(imageIndex >= imageArray.length){
-        imageIndex = 0;
-      }
-    } setInterval(changeImage, 2500);
-
-    function changeImage2() {
-      mainImage2.setAttribute('src', imageArray2[imageIndex2]);
-      imageIndex2++;
-      if(imageIndex2 >= imageArray2.length){
-        imageIndex2 = 0;
-      }
-    } setInterval(changeImage2, 2500);
+  document.getElementById('hired').addEventListener("click", changeImage);
+  function changeImage() {
+    mainImage.setAttribute('src', imageArray[imageIndex]);
+    imageIndex++;
+    if(imageIndex >= imageArray.length){
+      imageIndex = 0;
+    }
   }
 
-  function responsiveSize(target) {
-
-    if(size.indexOf(target) === -1) {
-      return false;
-    } else {
-      return true;
+  document.getElementById('pinum').addEventListener("click", changeImage2);
+  function changeImage2() {
+    mainImage2.setAttribute('src', imageArray2[imageIndex2]);
+    imageIndex2++;
+    if(imageIndex2 >= imageArray2.length){
+      imageIndex2 = 0;
     }
   }
 
