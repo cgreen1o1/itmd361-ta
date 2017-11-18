@@ -237,15 +237,15 @@ a[href*="http"] {
 
   /*
     For About Me & Background pages:
-    730 pixel grid w/ 50px + 80 margins (130)
-    Columns: 270px & 210px & 210px;
+    760 pixel grid w/ 50px margins (100)
+    Columns: 110px; (6 columns)
     Gutters: 20px;
-    First module: 270px;
-    Second and third module: 230px (210 + 20);
+    First module: 240px; (2 columns 110+110)
+    Second and third module: 240px (2 columns + margin: 220 + 20);
   */
   body {
     padding-right: 5.8139534883721%; /* 50 / 860 = 0.058139534883721 */
-    padding-left: 9.302325581%; /* 80 / 860 = 0.09302325581 */
+    padding-left: 5.8139534883721%; /* 50 / 860 = 0.058139534883721 */
   }
   body::after{
     content: "";
@@ -260,19 +260,19 @@ a[href*="http"] {
   }
   #home-content,
   #back-content {
-    width: 36.986301369863%; /* 270 / 730 = 0.36986301369863 */
+    width: 31.5789473684211%; /* 240 / 760 = 0.315789473684211 */
     float: left;
   }
   #home-supporting,
   #back-supporting {
-    width: 28.7671232876712%; /* 210 / 730 = 0.287671232876712 */
-    margin-left: 2.7397260273973%; /* 20 / 730 = 0.027397260273973 */
+    width: 31.5789473684211%; /* 240 / 760 = 0.315789473684211 */
+    margin-left: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
     float: left;
   }
   #home-support,
   #back-support {
-    width: 28.7671232876712%; /* 210 / 730 = 0.287671232876712 */
-    margin-left: 2.7397260273973%; /* 20 / 730 = 0.027397260273973 */
+    width: 31.5789473684211%; /* 240 / 760 = 0.315789473684211 */
+    margin-left: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
     float: right;
   }
   .flexbox #home-content,
@@ -347,19 +347,18 @@ a[href*="http"] {
   }
   /*
     For Resume page:
-    730 pixel grid w/ 50px + 80 margins (130)
-    Columns: 270px & 210px & 210px;
+    760 pixel grid w/ 50px margins (100)
+    Columns: 110px; (6 columns)
     Gutters: 20px;
-    First module: 500px; (270 + 210 + 20)
-    Second module: 230px (210 + 20);
+    First module: 500px; (4 columns + 3 margins)
   */
   #resume-content {
-    width: 68.4931506849315%; /* 500 / 730 = 0.684931506849315 */
+    width: 65.7894736842105%; /* 500 / 760 = 0.657894736842105 */
   }
   .cssgrid #resume-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 2.7397260273973%; /* 20 / 730 = 0.027397260273973 */
+    grid-column-gap: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
     width: auto;
   }
   .cssgrid #resume-all {
