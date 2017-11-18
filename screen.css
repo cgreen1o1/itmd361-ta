@@ -285,7 +285,7 @@ a[href*="http"] {
   .flexbox #home-pics {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .flexbox #home-police-pics {
     display: flex;
@@ -317,7 +317,7 @@ a[href*="http"] {
   }
   .flexbox #media-movie {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: auto;
   }
   .flexbox #shirts {
@@ -328,7 +328,7 @@ a[href*="http"] {
   }
   .flexbox #back-main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .flexbox #back-content,
   .flexbox #back-supporting,
