@@ -9,15 +9,15 @@ $.noConflict();
 //  function that cycles through images on click
 (function($) {
   var mainImage = document.getElementById('hired');
-  var imageArray = ['../media/hired-4-3.jpg',
-    '../media/parade-4-3.jpg',
-    '../media/hawks-star-cropped-4-3.jpg',
-    '../media/k9-4-3.jpg'];
+  var imageArray = [document.getElementById('hired').src,
+    document.getElementById('parade-pic').src,
+    document.getElementById('bhawkstar').src,
+    document.getElementById('k9dog').src];
   var imageIndex = 0;
   var mainImage2 = document.getElementById('pinum');
-  var imageArray2 = ['../media/pi-by-numbers-4-3.jpg',
-    '../media/irrational-pi-43.jpg',
-    '../media/no-place-like-home-4-3.jpg'];
+  var imageArray2 = [document.getElementById('pinum').src,
+    document.getElementById('irrpi').src,
+    document.getElementById('homeimg').src];
   var imageIndex2 = 0;
   var size = window.getComputedStyle(document.body,':after').getPropertyValue('content');
 
