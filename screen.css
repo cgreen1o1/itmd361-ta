@@ -140,6 +140,9 @@ figcaption {
 #hired-caption {
   padding-top: 0;
 }
+#parade-pic {
+  padding-bottom: 0.611em;/* 11 / 18 = 0.611111111111111 */
+}
 #background h3 {
   font-weight: bold;
 }
