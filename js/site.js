@@ -9,15 +9,17 @@ $.noConflict();
 
 (function($) {
   var mainImage = document.getElementById('hired');
-  var imageArray = [document.getElementById('hired').src,
+  var imageArray = [
     document.getElementById('parade-pic').src,
     document.getElementById('bhawkstar').src,
-    document.getElementById('k9dog').src];
+    document.getElementById('k9dog').src,
+    document.getElementById('hired').src];
   var imageIndex = 0;
   var mainImage2 = document.getElementById('pinum');
-  var imageArray2 = [document.getElementById('pinum').src,
+  var imageArray2 = [
     document.getElementById('irrpi').src,
-    document.getElementById('homeimg').src];
+    document.getElementById('homeimg').src,
+    document.getElementById('pinum').src];
   var imageIndex2 = 0;
 
   $('video').on('click', function() {
