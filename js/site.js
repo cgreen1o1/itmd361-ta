@@ -19,7 +19,6 @@ $.noConflict();
     document.getElementById('irrpi').src,
     document.getElementById('homeimg').src];
   var imageIndex2 = 0;
-  var size = window.getComputedStyle(document.body,':after').getPropertyValue('content');
 
   $('video').on('click', function() {
     this.paused ? this.play() : this.pause();
