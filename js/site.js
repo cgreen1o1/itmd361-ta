@@ -8,18 +8,18 @@ $('html').addClass('js').removeClass('no-js');
 $.noConflict();
 
 (function($) {
-  var mainImage = document.getElementById('hired');
+  var mainImage = document.getElementById('img1');
   var imageArray = [
-    document.getElementById('parade-pic').src,
-    document.getElementById('bhawkstar').src,
-    document.getElementById('k9dog').src,
-    document.getElementById('hired').src];
+    document.getElementById('img2').src,
+    document.getElementById('img3').src,
+    document.getElementById('img4').src,
+    document.getElementById('img1').src];
   var imageIndex = 0;
-  var mainImage2 = document.getElementById('pinum');
+  var mainImage2 = document.getElementById('img5');
   var imageArray2 = [
-    document.getElementById('irrpi').src,
-    document.getElementById('homeimg').src,
-    document.getElementById('pinum').src];
+    document.getElementById('img6').src,
+    document.getElementById('img7').src,
+    document.getElementById('img5').src];
   var imageIndex2 = 0;
 
   $('video').on('click', function() {
@@ -27,7 +27,7 @@ $.noConflict();
   });
 
   //  function that cycles through images on click
-  document.getElementById('hired').addEventListener("click", changeImage);
+  document.getElementById('img1').addEventListener("click", changeImage);
   function changeImage() {
     mainImage.setAttribute('src', imageArray[imageIndex]);
     imageIndex++;
@@ -36,7 +36,7 @@ $.noConflict();
     }
   }
   //  function that cycles through images on click
-  document.getElementById('pinum').addEventListener("click", changeImage2);
+  document.getElementById('img5').addEventListener("click", changeImage2);
   function changeImage2() {
     mainImage2.setAttribute('src', imageArray2[imageIndex2]);
     imageIndex2++;

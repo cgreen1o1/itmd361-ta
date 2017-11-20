@@ -35,7 +35,7 @@ body {
   padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
   background: linear-gradient(to top left, #00CCFF, #FFFFFF);
 }
-body::after{
+body::after {
   content: "image-slideshow";
   display: none;
 }
@@ -133,14 +133,14 @@ figcaption {
   2. concerned with layout and spatial
      relationships
 */
-#merch,
-#common-others {
+#home-supporting-h2,
+#home-support-section-h2 {
   padding-top: 0.611em;/* 11 / 18 = 0.611111111111111 */
 }
-#hired-caption {
+#img1-caption {
   padding-top: 0;
 }
-#parade-pic {
+#img2 {
   padding-bottom: 0.611em;/* 11 / 18 = 0.611111111111111 */
 }
 #background h3 {
@@ -164,8 +164,8 @@ a[href*="http"] {
   width: 33.3333333333%;
 }
 .js a,
-.js #hired,
-.js #pinum {
+.js #img1,
+.js #img5 {
   cursor: pointer;
 }
 #navigation a {
@@ -191,7 +191,7 @@ a[href*="http"] {
   list-style-type: none;
   padding-bottom: 0;
 }
-#crystal {
+#back-content-h3 {
   padding-top: 1.22em; /* 22 / 18 = 1.2222222222 */
 }
 /* State Styles */
@@ -230,7 +230,7 @@ a[href*="http"] {
 }
 
 @media screen and (min-width: 860px) {
-  #merch {
+  #home-supporting-h2 {
     padding-top: 0;
   }
 
@@ -257,6 +257,22 @@ a[href*="http"] {
     float: left;
   }
 
+  body {
+    padding-right: 5.8139534883721%; /* 50 / 860 = 0.058139534883721 */
+    padding-left: 5.8139534883721%; /* 50 / 860 = 0.058139534883721 */
+  }
+  body::after {
+    content: "";
+    display: none;
+  }
+  #background aside {
+    padding-top: 0;
+  }
+  .flexbox #home-aside2 {
+    text-align: center;
+    padding-top: 0;
+  }
+
   /*
     Background page:
     760 pixel grid w/ 50px margins (100)
@@ -265,27 +281,11 @@ a[href*="http"] {
     First module: 240px; (2 columns 110+110+20)
     Second and third module: 260px (2 columns + margin: 220 + 20 + 20);
   */
-  body {
-    padding-right: 5.8139534883721%; /* 50 / 860 = 0.058139534883721 */
-    padding-left: 5.8139534883721%; /* 50 / 860 = 0.058139534883721 */
-  }
-  body::after{
-    content: "";
-    display: none;
-  }
-  #background aside {
-    padding-top: 0;
-  }
-  .flexbox #home-aside {
-    text-align: center;
-    padding-top: 0;
-  }
 
   #back-content {
     width: 31.5789473684211%; /* 240 / 760 = 0.315789473684211 */
     float: left;
   }
-  #home-supporting,
   #back-supporting {
     width: 31.5789473684211%; /* 240 / 760 = 0.315789473684211 */
     margin-left: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
@@ -303,36 +303,36 @@ a[href*="http"] {
     margin: 0;
     width: auto;
   }
-  .flexbox #home-pics {
+  .flexbox #home-aside1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .flexbox #home-police-pics {
+  .flexbox #home-aside1-section {
     display: flex;
     flex-direction: column;
   }
-  .flexbox #police-merch {
+  .flexbox #home-aside1-section2 {
     display: flex;
     flex-direction: column;
   }
-  .flexbox #bhawks-caption {
+  .flexbox #img3-caption {
     padding-top: 0;
   }
-  .flexbox #sworn-in,
-  .flexbox #parade,
-  .flexbox #dog {
+  .flexbox #figure1,
+  .flexbox #figure2,
+  .flexbox #figure4 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 29.623em; /* 400px (size of picture width) / 13.503px (size of
     figcaption text) = 29.623046730356217 */
   }
-  .flexbox #merch,
-  .flexbox #common-others {
+  .flexbox #home-supporting-h2,
+  .flexbox #home-support-section-h2 {
     padding-top: 0.611em;/* 11 / 18 = 0.611111111111111 */
   }
-  .flexbox #home-media {
+  .flexbox #home-aside3 {
     display: flex;
     flex-direction: column;
   }
@@ -341,7 +341,7 @@ a[href*="http"] {
     justify-content: space-around;
     margin: auto;
   }
-  .flexbox #shirts {
+  .flexbox #home-aside3-section {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -387,8 +387,8 @@ a[href*="http"] {
   }
 }
 @media screen and (min-width: 1000px) {
-  .flexbox #home-text,
-  .flexbox #other-text {
+  .flexbox #home-content-section,
+  .flexbox #home-support-section {
     width: 75%; /* 750 / 1000 = 0.75 */
   }
 }
