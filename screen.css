@@ -230,8 +230,7 @@ a[href*="http"] {
 }
 
 @media screen and (min-width: 860px) {
-  #merch,
-  #common-others {
+  #merch {
     padding-top: 0;
   }
 
