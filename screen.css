@@ -240,8 +240,8 @@ a[href*="http"] {
     760 pixel grid w/ 50px margins (100)
     Columns: 110px; (6 columns)
     Gutters: 20px;
-    First module: 240px; (2 columns 110+110)
-    Second and third module: 240px (2 columns + margin: 220 + 20);
+    First module: 240px; (2 columns 110+110+20)
+    Second and third module: 260px (2 columns + margin: 220 + 20 + 20);
   */
   body {
     padding-right: 5.8139534883721%; /* 50 / 860 = 0.058139534883721 */
@@ -350,7 +350,7 @@ a[href*="http"] {
     760 pixel grid w/ 50px margins (100)
     Columns: 110px; (6 columns)
     Gutters: 20px;
-    First module: 500px; (4 columns + 3 margins)
+    First module: 500px; (4 columns + 3 margins | 110 + 110 + 110 + 110 + 20 + 20 + 20)
   */
   #resume-content {
     width: 65.7894736842105%; /* 500 / 760 = 0.657894736842105 */
