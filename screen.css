@@ -140,9 +140,7 @@ figcaption {
 #img1-caption {
   padding-top: 0;
 }
-#img2 {
-  padding-bottom: 0.611em;/* 11 / 18 = 0.611111111111111 */
-}
+
 #background h3 {
   font-weight: bold;
 }
@@ -268,10 +266,6 @@ a[href*="http"] {
   #background aside {
     padding-top: 0;
   }
-  .flexbox #home-aside2 {
-    text-align: center;
-    padding-top: 0;
-  }
 
   /*
     Background page:
@@ -305,47 +299,36 @@ a[href*="http"] {
   }
   .flexbox #home-aside1 {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .flexbox #home-aside1-section {
-    display: flex;
-    flex-direction: column;
+  .flexbox #img4 {
+    padding-bottom: 1.22em; /* 22 / 18 = 1.2222222222 */
   }
-  .flexbox #home-aside1-section2 {
-    display: flex;
-    flex-direction: column;
-  }
-  .flexbox #img3-caption {
+  .flexbox #figure2 figcaption {
     padding-top: 0;
   }
   .flexbox #figure1,
   .flexbox #figure2,
+  .flexbox #figure3,
   .flexbox #figure4 {
+    width: 39.4736842105263%;  /* 300 / 760 = 0.394736842105263 | 400px by 300px = dimensinos of pictures */
+  }
+  .flexbox #home-aside2 {  /*aside comment of having fondness for pi */
+    text-align: center;
+    padding-top: 0;
+  }
+  .flexbox #home-aside3-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 29.623em; /* 400px (size of picture width) / 13.503px (size of
-    figcaption text) = 29.623046730356217 */
-  }
-  .flexbox #home-supporting-h2,
-  .flexbox #home-support-section-h2 {
-    padding-top: 0.611em;/* 11 / 18 = 0.611111111111111 */
-  }
-  .flexbox #home-aside3 {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-around;
   }
   .flexbox #media-movie {
     display: flex;
     justify-content: space-around;
     margin: auto;
-  }
-  .flexbox #home-aside3-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
   }
   .flexbox #back-main {
     display: flex;
