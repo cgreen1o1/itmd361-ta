@@ -236,7 +236,30 @@ a[href*="http"] {
   }
 
   /*
-    For About Me & Background pages:
+    For About Me page:
+    760 pixel grid w/ 50px margins (100)
+    Columns: 110px; (6 columns)
+    Gutters: 20px;
+    First module: 500px; (4 columns + 3 margins | 110 + 110 + 110 + 110 + 20 + 20 + 20)
+    Second module: 260px (2 columns + margin: 220 + 20 + 20);
+  */
+
+  #home-content {
+    width: 65.7894736842105%; /* 500 / 760 = 0.657894736842105 */
+    float: left;
+  }
+  #home-supporting {
+    width: 31.5789473684211%; /* 240 / 760 = 0.315789473684211 */
+    margin-left: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
+    float: left;
+  }
+  #home-support {
+    width: 65.7894736842105%; /* 500 / 760 = 0.657894736842105 */
+    float: left;
+  }
+
+  /*
+    Background page:
     760 pixel grid w/ 50px margins (100)
     Columns: 110px; (6 columns)
     Gutters: 20px;
@@ -258,7 +281,7 @@ a[href*="http"] {
     text-align: center;
     padding-top: 0;
   }
-  #home-content,
+
   #back-content {
     width: 31.5789473684211%; /* 240 / 760 = 0.315789473684211 */
     float: left;
@@ -269,7 +292,6 @@ a[href*="http"] {
     margin-left: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
     float: left;
   }
-  #home-support,
   #back-support {
     width: 31.5789473684211%; /* 240 / 760 = 0.315789473684211 */
     margin-left: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
