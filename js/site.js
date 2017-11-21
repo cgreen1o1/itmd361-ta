@@ -26,8 +26,13 @@ $.noConflict();
     this.paused ? this.play() : this.pause();
   });
 
+  // Run toggledNavigation function on load and resize events:
+  //  $(document).ready(changeImage());
+  //  $(document).ready(changeImage2());
+  //  $(window).on('resize', changeImage);
+  //  $(window).on('resize', changeImage2);
+
   //  function that cycles through images on click
-  document.getElementById('img1').addEventListener("click", changeImage);
   function changeImage() {
     mainImage.setAttribute('src', imageArray[imageIndex]);
     imageIndex++;
@@ -35,14 +40,21 @@ $.noConflict();
       imageIndex = 0;
     }
   }
-  //  function that cycles through images on click
-  document.getElementById('img5').addEventListener("click", changeImage2);
+  //  function that cycles through 2nd set of images on click
   function changeImage2() {
     mainImage2.setAttribute('src', imageArray2[imageIndex2]);
     imageIndex2++;
     if(imageIndex2 >= imageArray2.length){
       imageIndex2 = 0;
     }
+  }
+  if(responsiveFeature('image-slideshow')) {
+    document.getElementById('img1').addEventListener("click", changeImage);
+    document.getElementById('img5').addEventListener("click", changeImage2);
+  } else {
+    document.getElementById('img1').removeEventListener("click", changeImage);
+    document.getElementById('img5').removeEventListener("click", changeImage);
+    $('.hide').show();
   }
 
   function responsiveFeature(feature) {

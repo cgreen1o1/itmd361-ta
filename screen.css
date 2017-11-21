@@ -212,7 +212,9 @@ a[href*="http"] {
   color: #000000;
   background-color: #00CCFF;
 }
-
+.js .hide {
+  display: none;
+}
 
 @media screen and (min-width: 375px) {
   body {
@@ -240,6 +242,10 @@ a[href*="http"] {
     padding-top: 0;
   }
 
+  .js #img1,
+  .js #img5 {
+    cursor: default;
+  }
   /*
     For About Me page:
     760 pixel grid w/ 50px margins (100)
