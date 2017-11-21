@@ -228,7 +228,15 @@ a[href*="http"] {
 }
 
 @media screen and (min-width: 860px) {
-  #home-supporting-h2 {
+  body {
+    padding-right: 5.8139534883721%; /* 50 / 860 = 0.058139534883721 */
+    padding-left: 5.8139534883721%; /* 50 / 860 = 0.058139534883721 */
+  }
+  body::after {
+    content: "";
+    display: none;
+  }
+  #background aside {
     padding-top: 0;
   }
 
@@ -250,21 +258,12 @@ a[href*="http"] {
     margin-left: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
     float: left;
   }
+  #home-supporting-h2 {
+    padding-top: 0;
+  }
   #home-support {
     width: 65.7894736842105%; /* 500 / 760 = 0.657894736842105 */
     float: left;
-  }
-
-  body {
-    padding-right: 5.8139534883721%; /* 50 / 860 = 0.058139534883721 */
-    padding-left: 5.8139534883721%; /* 50 / 860 = 0.058139534883721 */
-  }
-  body::after {
-    content: "";
-    display: none;
-  }
-  #background aside {
-    padding-top: 0;
   }
 
   /*
