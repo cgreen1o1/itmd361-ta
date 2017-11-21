@@ -306,6 +306,9 @@ a[href*="http"] {
   .flexbox #img4 {
     padding-bottom: 1.22em; /* 22 / 18 = 1.2222222222 */
   }
+  .flexbox #img3-caption {
+    padding-top: 0;
+  }
   .flexbox #figure2 figcaption {
     padding-top: 0;
   }
