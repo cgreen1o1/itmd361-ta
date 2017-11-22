@@ -10,10 +10,10 @@ $.noConflict();
 (function($) {
   var mainImage = document.getElementById('img1');
   var imageArray = [
+    document.getElementById('img1').src,
     document.getElementById('img2').src,
     document.getElementById('img3').src,
-    document.getElementById('img4').src,
-    document.getElementById('img1').src];
+    document.getElementById('img4').src];
   var imageIndex = 0;
   var mainImage2 = document.getElementById('img5');
   var imageArray2 = [
@@ -27,34 +27,42 @@ $.noConflict();
   });
 
   // Run toggledNavigation function on load and resize events:
-  //  $(document).ready(changeImage());
-  //  $(document).ready(changeImage2());
-  //  $(window).on('resize', changeImage);
-  //  $(window).on('resize', changeImage2);
+  $(document).ready(changeImage());
+  $(document).ready(changeImage2());
+  $(window).on('resize', changeImage);
+  $(window).on('resize', changeImage2);
 
   //  function that cycles through images on click
   function changeImage() {
-    mainImage.setAttribute('src', imageArray[imageIndex]);
-    imageIndex++;
-    if(imageIndex >= imageArray.length){
-      imageIndex = 0;
+    if(responsiveFeature('image-slideshow')) {
+      $('.hide').hide();
+      document.getElementById('img1').addEventListener("click", changeImage);
+      mainImage.setAttribute('src', imageArray[imageIndex]);
+      imageIndex++;
+      if(imageIndex >= imageArray.length){
+        imageIndex = 0;
+      }
+    } else {
+      document.getElementById('img1').removeEventListener("click", changeImage);
+      $('#img1').html('<img src="media/hired-4-3.jpg" alt="Me as a Police Officer" />');
+      $('.hide').show();
     }
   }
-  //  function that cycles through 2nd set of images on click
+  //  function that cycles through images on click
   function changeImage2() {
-    mainImage2.setAttribute('src', imageArray2[imageIndex2]);
-    imageIndex2++;
-    if(imageIndex2 >= imageArray2.length){
-      imageIndex2 = 0;
+    if(responsiveFeature('image-slideshow')) {
+      $('.hide').hide();
+      document.getElementById('img5').addEventListener("click", changeImage2);
+      mainImage2.setAttribute('src', imageArray2[imageIndex2]);
+      imageIndex2++;
+      if(imageIndex2 >= imageArray2.length){
+        imageIndex2 = 0;
+      }
+    } else {
+      document.getElementById('img5').removeEventListener("click", changeImage2);
+      mainImage2;
+      $('.hide').show();
     }
-  }
-  if(responsiveFeature('image-slideshow')) {
-    document.getElementById('img1').addEventListener("click", changeImage);
-    document.getElementById('img5').addEventListener("click", changeImage2);
-  } else {
-    document.getElementById('img1').removeEventListener("click", changeImage);
-    document.getElementById('img5').removeEventListener("click", changeImage);
-    $('.hide').show();
   }
 
   function responsiveFeature(feature) {
