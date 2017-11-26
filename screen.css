@@ -427,11 +427,24 @@ button,
   .flexbox #back-support {
     order: 3;
   }
+  .cssgrid #home-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
+    grid-template-rows: auto auto;
+  }
+  .cssgrid #home-content-section {
+    grid-column: 1 / 5;
+    grid-row: 1;
+  }
+  .cssgrid #home-aside1 {
+    grid-column: 1 / 5;
+    grid-row: 2;
+  }
   .cssgrid #back-main {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-column-gap: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
-    grid-template-rows: auto auto;
   }
   .cssgrid #back-content,
   .cssgrid #back-supporting,
