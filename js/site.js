@@ -21,7 +21,6 @@ $.noConflict();
     document.getElementById('img7').src,
     document.getElementById('img5').src];
   var imageIndex2 = 0;
-  var timeout = false; // holder for timeout id
 
   $('video').on('click', function() {
     this.paused ? this.play() : this.pause();
@@ -30,18 +29,8 @@ $.noConflict();
   // Run changeImage function on load:
   $(document).ready(changeImage());
   $(document).ready(changeImage2());
-
-  // window.resize event listener
-  window.addEventListener('resize', function() {
-    // clear the timeout
-    clearTimeout(timeout);
-    // start timing for event "completion"
-    timeout = setTimeout(changeImage, 250);
-  });
-  window.addEventListener('resize', function() {
-    clearTimeout(timeout);
-    timeout = setTimeout(changeImage2, 250);
-  });
+  $(window).on('resize', changeImage);
+  $(window).on('resize', changeImage2);
 
   //  function that cycles through images on click
   function changeImage() {
