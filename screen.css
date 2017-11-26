@@ -161,6 +161,7 @@ a[href*="http"] {
   float: left;
   width: 33.3333333333%;
 }
+button,
 .js a,
 .js #img1-append,
 .js #img5-append {
@@ -220,7 +221,20 @@ a[href*="http"] {
   padding-top: 0;
 }
 .js #img5-append {
-  padding-bottom: 0.611em;/* 11 / 18 = 0.611111111111111 */
+  padding-top: 0;
+}
+.flexbox #figure1-append,
+.flexbox #figure5-append {
+  display: flex;
+}
+#img1-button,
+#img5-button {
+  width: 25%;
+  opacity: 10%;
+  background-color: #00CCFF;
+}
+#img5-button {
+  background-color: black;
 }
 
 @media screen and (min-width: 375px) {
