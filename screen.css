@@ -330,15 +330,15 @@ button,
     width: 65.7894736842105%; /* 500 / 760 = 0.657894736842105 */
     float: left;
   }
-  #img1-caption,
-  #img2-caption,
-  #img3-caption,
-  #img4-caption {
-    width: 30em; /* 400px */
+  .flexbox #img1-caption,
+  .flexbox #img2-caption,
+  .flexbox #img3-caption,
+  .flexbox #img4-caption {
+    width: 25em; /* 400px */
   }
-  #img5-caption,
-  #img6-caption,
-  #img7-caption {
+  .flexbox #img5-caption,
+  .flexbox #img6-caption,
+  .flexbox #img7-caption {
     width: 19em;
   }
 
@@ -451,5 +451,11 @@ button,
   .flexbox #home-content-section,
   .flexbox #home-support-section {
     width: 75%; /* 750 / 1000 = 0.75 */
+  }
+  .flexbox #img1-caption,
+  .flexbox #img2-caption,
+  .flexbox #img3-caption,
+  .flexbox #img4-caption {
+    width: 30em; /* 400px */
   }
 }
