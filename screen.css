@@ -190,6 +190,48 @@ button,
   list-style-type: none;
   padding-bottom: 0;
 }
+/*Get captions to nest inside images */
+#figure1,
+#figure2,
+#figure3,
+#figure4,
+#figure5,
+#figure6,
+#figure7 {
+  position: relative;
+}
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6,
+#img7 {
+  padding-top: 0;
+  padding-bottom: 1.222em; /* 22 / 18 = 1.2222222222 */
+}
+#img1-caption,
+#img2-caption,
+#img3-caption,
+#img4-caption {
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 0.611em; /* 11 / 18 = 0.6111111 */
+  display: block;
+  width: 35em; /* 350px */
+}
+#img5-caption,
+#img6-caption,
+#img7-caption {
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 0.611em; /* 11 / 18 = 0.6111111 */
+  display: block;
+  width: 25em; /* 250px */
+}
+
 #back-content-h3 {
   padding-top: 1.22em; /* 22 / 18 = 1.2222222222 */
 }
@@ -287,6 +329,17 @@ button,
   #home-support {
     width: 65.7894736842105%; /* 500 / 760 = 0.657894736842105 */
     float: left;
+  }
+  #img1-caption,
+  #img2-caption,
+  #img3-caption,
+  #img4-caption {
+    width: 30em; /* 400px */
+  }
+  #img5-caption,
+  #img6-caption,
+  #img7-caption {
+    width: 19em;
   }
 
   /*
