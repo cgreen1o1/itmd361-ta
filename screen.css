@@ -427,6 +427,26 @@ button,
   .flexbox #back-support {
     order: 3;
   }
+  .cssgrid #back-main {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-column-gap: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
+    grid-template-rows: auto auto;
+  }
+  .cssgrid #back-content,
+  .cssgrid #back-supporting,
+  .cssgrid #back-support {
+    float: none;
+    margin: 0;
+    width: auto;
+  }
+
+  .cssgrid #back-supporting {
+    grid-column: 1 / 2;
+  }
+  .cssgrid #back-support {
+    grid-column: 3 / 4;
+  }
   /*
     For Resume page:
     760 pixel grid w/ 50px margins (100)
