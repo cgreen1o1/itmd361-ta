@@ -215,6 +215,13 @@ a[href*="http"] {
 .js .hide {
   display: none;
 }
+.js #img1-append,
+.js #home-aside1 {
+  padding-top: 0;
+}
+.js #img5-append {
+  padding-bottom: 0.611em;/* 11 / 18 = 0.611111111111111 */
+}
 
 @media screen and (min-width: 375px) {
   body {
