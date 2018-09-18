@@ -81,7 +81,7 @@ li ul {
 }
 li ol {
   list-style-type: none;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 /* nested list within nested list */
@@ -104,21 +104,11 @@ li {
   padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
 }
 li li:last-child,
-aside,
-img,
-video,
-figure,
-figcaption {
+aside {
   padding-bottom: 0;
 }
 /* Responsive Media */
-img,
-video,
-audio {
-  display: block;
-  max-width: 100%;
-  padding-top: 0.611em; /* 11 / 18 = 0.6111111 */
-}
+
 aside,
 figcaption {
   font-size: 0.75em; /* 13.503px / 18 = 0.75em */
@@ -133,13 +123,6 @@ figcaption {
   2. concerned with layout and spatial
      relationships
 */
-#home-supporting-h2,
-#home-support-section-h2 {
-  padding-top: 0.611em;/* 11 / 18 = 0.611111111111111 */
-}
-#img1-caption {
-  padding-top: 0;
-}
 
 #background h3 {
   font-weight: bold;
@@ -190,51 +173,7 @@ button,
   list-style-type: none;
   padding-bottom: 0;
 }
-/*Get captions to nest inside images */
-#figure1,
-#figure2,
-#figure3,
-#figure4,
-#figure5,
-#figure6,
-#figure7 {
-  position: relative;
-}
-#img1,
-#img2,
-#img3,
-#img4,
-#img5,
-#img6,
-#img7 {
-  padding-top: 0;
-  padding-bottom: 1.222em; /* 22 / 18 = 1.2222222222 */
-}
-#img1-caption,
-#img2-caption,
-#img3-caption,
-#img4-caption {
-  position: absolute;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  padding: 0.611em; /* 11 / 18 = 0.6111111 */
-  display: block;
-  width: 35em; /* 350px */
-}
-#img5-caption,
-#img6-caption,
-#img7-caption {
-  position: absolute;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  padding: 0.611em; /* 11 / 18 = 0.6111111 */
-  display: block;
-  width: 25em; /* 250px */
-}
 
-#back-content-h3 {
-  padding-top: 1.22em; /* 22 / 18 = 1.2222222222 */
-}
 /* State Styles */
 /*
   States of the browser and user access
@@ -249,37 +188,12 @@ button,
   background-color: #0000FF;
 }
 /* When page active, styling added to link on page */
-#home #nav-me a,
-#resume-html #nav-res a,
-#background #nav-back a {
+#home #nav-ta a {
   color: #000000;
   background-color: #00CCFF;
 }
 .js .hide {
   display: none;
-}
-.js #img1-append,
-.js #home-aside1 {
-  padding-top: 0;
-}
-.js #img5-append {
-  padding-top: 0;
-}
-.flexbox #figure1-append,
-.flexbox #figure5-append {
-  display: flex;
-  flex-grow: 0;
-  align-items: center;
-  flex-direction: column;
-}
-#img1-button,
-#img5-button {
-  width: 25%;
-  opacity: 10%;
-  background-color: #00CCFF;
-}
-#img5-button {
-  background-color: black;
 }
 
 @media screen and (min-width: 375px) {
