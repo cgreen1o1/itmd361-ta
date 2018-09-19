@@ -22,6 +22,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
+  color: #222;
+  background: #EEE;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
@@ -33,7 +35,7 @@ body {
   padding-top: 3.667em; /* 66 / 18 = 3.667... */
   padding-right: 1.222em; /* 22 / 18 = 1.2222222222 */
   padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
-  background: linear-gradient(to top left, #00CCFF, #FFFFFF);
+  /*background: linear-gradient(to top left, #00CCFF, #FFFFFF);*/
 }
 body::after {
   content: "image-slideshow";
@@ -136,8 +138,8 @@ figcaption {
 /* Links */
 
 /* Style links outside of project pages */
-a[href*="http"] {
-  color: #0000FF;
+a[href*="http"], a[href*="mail"] {
+  color: #A00;
   text-decoration: none;
 }
 #navigation li {
@@ -157,8 +159,8 @@ button,
   padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
   text-align: center;
   text-decoration: none;
-  background-color: #000000;
-  color: #00CCFF;
+  background: #222;
+  color: #EEE;
 }
 /* Modular Styles */
 /*
@@ -185,12 +187,12 @@ button,
 */
 
 #navigation a:hover {
-  background-color: #0000FF;
+  background-color: #A00;
 }
 /* When page active, styling added to link on page */
 #home #nav-ta a {
   color: #000000;
-  background-color: #00CCFF;
+  background-color: rgba(0,0,0,0.1);
 }
 .js .hide {
   display: none;
