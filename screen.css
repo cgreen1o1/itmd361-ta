@@ -111,13 +111,6 @@ aside {
 }
 /* Responsive Media */
 
-aside,
-figcaption {
-  font-size: 0.75em; /* 13.503px / 18 = 0.75em */
-  line-height: 1.037em; /* 14px / 13.503 = 1.0368em */
-  padding-top: 0.815em; /* 11 / 13.503 = 0.81463*/
-}
-
 /* Layout Styles */
 /*
   Hint: these tend to be
@@ -126,9 +119,6 @@ figcaption {
      relationships
 */
 
-#background h3 {
-  font-weight: bold;
-}
 #navigation {
   position: absolute;
   width: 100%;
@@ -146,12 +136,7 @@ a[href*="http"], a[href*="mail"] {
   float: left;
   width: 50%;
 }
-button,
-.js a,
-.js #img1-append,
-.js #img5-append {
-  cursor: pointer;
-}
+
 #navigation a {
   display: block;
   width: 100%;
@@ -176,6 +161,9 @@ button,
   padding-bottom: 0;
 }
 
+.help {
+  color: #222;
+}
 /* State Styles */
 /*
   States of the browser and user access
@@ -220,9 +208,6 @@ button,
     content: "";
     display: none;
   }
-  #background aside {
-    padding-top: 0;
-  }
 
   /*
     For About Me page:
@@ -233,154 +218,43 @@ button,
     Second module: 260px (2 columns + margin: 220 + 20 + 20);
   */
 
-  #home-content {
-    width: 65.7894736842105%; /* 500 / 760 = 0.657894736842105 */
-    float: left;
-  }
-  #home-supporting {
-    width: 31.5789473684211%; /* 240 / 760 = 0.315789473684211 */
-    margin-left: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
-    float: left;
-  }
-  #home-supporting-h2 {
-    padding-top: 0;
-  }
-  #home-support {
-    width: 65.7894736842105%; /* 500 / 760 = 0.657894736842105 */
-    float: left;
-  }
-  .flexbox #img1-caption,
-  .flexbox #img2-caption,
-  .flexbox #img3-caption,
-  .flexbox #img4-caption {
-    width: 25em; /* 400px */
-  }
-  .flexbox #img5-caption,
-  .flexbox #img6-caption,
-  .flexbox #img7-caption {
-    width: 19em;
-  }
 
   /*
     Background page:
     760 pixel grid w/ 50px margins (100)
     Columns: 110px; (6 columns)
-    Gutters: 20px;
-    First module: 240px; (2 columns 110+110+20)
-    Second and third module: 260px (2 columns + margin: 220 + 20 + 20);
+    Gutters: 40px;
+    First module: 260px; (2 columns 110+110+40)
+    Second module: 200px (2 columns + margin: 220 + 40);
   */
 
-  #back-content {
+  #home-content-section {
     width: 31.5789473684211%; /* 240 / 760 = 0.315789473684211 */
     float: left;
   }
-  #back-supporting {
+  #home-help {
     width: 31.5789473684211%; /* 240 / 760 = 0.315789473684211 */
-    margin-left: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
+    margin-left: 36.8421052631579%; /* 280 / 760 = 0.368421052631579 */
     float: left;
   }
-  #back-support {
-    width: 31.5789473684211%; /* 240 / 760 = 0.315789473684211 */
-    margin-left: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
-    float: right;
-  }
-  .flexbox #home-content,
-  .flexbox #home-supporting,
-  .flexbox #home-support {
+
+  .flexbox #home-body {
     float: none;
     margin: 0;
     width: auto;
   }
-  .flexbox #home-aside1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .flexbox #img4 {
-    padding-bottom: 1.22em; /* 22 / 18 = 1.2222222222 */
-  }
-  .flexbox #img3-caption {
-    padding-top: 0;
-  }
-  .flexbox #figure2 figcaption {
-    padding-top: 0;
-  }
-  .flexbox #figure1,
-  .flexbox #figure2,
-  .flexbox #figure3,
-  .flexbox #figure4 {
-    width: 39.4736842105263%;  /* 300 / 760 = 0.394736842105263 | 400px by 300px = dimensinos of pictures */
-  }
-  .flexbox #home-aside2 {  /*aside comment of having fondness for pi */
-    text-align: center;
-    padding-top: 0;
-  }
-  .flexbox #home-aside3-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .flexbox #media-movie {
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-  }
-  .flexbox #back-main {
-    display: flex;
-    justify-content: space-around;
-  }
-  .flexbox #back-content,
-  .flexbox #back-supporting,
-  .flexbox #back-support {
-    float: none;
-    margin: 0;
-  }
-  .flexbox #back-content {
-    order: 2;
-  }
-  .flexbox #back-supporting {
-    order: 1;
-  }
-  .flexbox #back-support {
-    order: 3;
-  }
-  .cssgrid #home-content {
+
+  .scssgrid #home-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
     grid-template-rows: auto auto;
   }
-  .cssgrid #home-content-section {
+  .scssgrid #home-content-section {
     grid-column: 1 / 5;
     grid-row: 1;
   }
-  .cssgrid #home-aside1 {
-    grid-column: 1 / 5;
-    grid-row: 2;
-  }
-  .cssgrid #back-main {
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-column-gap: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
-  }
-  .cssgrid #back-content,
-  .cssgrid #back-supporting,
-  .cssgrid #back-support {
-    float: none;
-    margin: 0;
-    width: auto;
-  }
 
-  .cssgrid #back-supporting {
-    grid-column: 1 / 2;
-  }
-  .cssgrid #back-support {
-    grid-column: 3 / 4;
-  }
   /*
     For Resume page:
     760 pixel grid w/ 50px margins (100)
@@ -388,28 +262,9 @@ button,
     Gutters: 20px;
     First module: 500px; (4 columns + 3 margins | 110 + 110 + 110 + 110 + 20 + 20 + 20)
   */
-  #resume-content {
-    width: 65.7894736842105%; /* 500 / 760 = 0.657894736842105 */
-  }
-  .cssgrid #resume-content {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 2.6315789473684%; /* 20 / 760 = 0.026315789473684 */
-    width: auto;
-  }
-  .cssgrid #resume-all {
-    grid-column: 1 / 5;
-  }
-}
+
 @media screen and (min-width: 1000px) {
-  .flexbox #home-content-section,
-  .flexbox #home-support-section {
+  .flexbox #home-content-section {
     width: 75%; /* 750 / 1000 = 0.75 */
-  }
-  .flexbox #img1-caption,
-  .flexbox #img2-caption,
-  .flexbox #img3-caption,
-  .flexbox #img4-caption {
-    width: 30em; /* 400px */
   }
 }
